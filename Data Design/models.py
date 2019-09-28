@@ -1,8 +1,4 @@
 from django.db import models
-
-# Create your models here.
-
-from django.db import models
 import datetime
 
 
@@ -23,9 +19,7 @@ class Agent(models.Model):
     version = models.CharField(max_length=5)
     address = models.TextField('address', default='', max_length=39)
 
-#     raise NotImplementedError
-#
-#
+    
 class Event(models.Model):
     level = models.CharField('level', max_length=20)
     data = models.TextField('data', default='', max_length=39)
@@ -35,17 +29,10 @@ class Event(models.Model):
     user = models.ForeignKey(User, on_delete=models.deletion.DO_NOTHING,default='')
 
 
-#     raise NotImplementedError
-#
-#
 class Group(models.Model):
     name = models.CharField('Name', max_length=50)
 
-#     raise NotImplementedError
-#
-#
+    
 class GroupUser(models.Model):
     group = models.ForeignKey(Group, on_delete=models.deletion.DO_NOTHING,default='')
     user = models.ForeignKey(User, on_delete=models.deletion.DO_NOTHING,default='')
-
-#     raise NotImplementedError
