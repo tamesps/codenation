@@ -1,0 +1,16 @@
+# Distribution
+.Python
+
+# Byte-compiled
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Installer logs
+pip-log.txt
+
+# Unit test
+.pytest_cache/
+
+# System files
+.DS_Store
